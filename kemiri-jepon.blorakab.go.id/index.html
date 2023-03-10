@@ -1,0 +1,817 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <title>Sistem Informasi Desa</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="" />
+  <meta name="author" content="" />
+
+  <!-- css -->
+  <link rel="shortcut icon" href="https://kemiri-jepon.blorakab.go.id/blogtheme2/ico/bl.png">
+  <link href="https://kemiri-jepon.blorakab.go.id/blogtheme3/css/bootstrap.css" rel="stylesheet">
+  <link href="https://kemiri-jepon.blorakab.go.id/blogtheme3/css/style.css" rel="stylesheet">
+  <link href="https://kemiri-jepon.blorakab.go.id/blogtheme3/plugins/bxslider/jquery.bxslider.css" rel="stylesheet">
+  <link href="https://kemiri-jepon.blorakab.go.id/blogtheme3/plugins/slick/slick.css" rel="stylesheet">
+  <link href="https://kemiri-jepon.blorakab.go.id/blogtheme3/plugins/slick/slick-theme.css" rel="stylesheet">
+  <link href="https://kemiri-jepon.blorakab.go.id/blogtheme3/plugins/slider_revo/settings.css " rel="stylesheet" />
+
+
+  <link href="https://kemiri-jepon.blorakab.go.id/blogtheme3/font-awesome/css/font-awesome.min.css" rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@500;700&display=swap" rel="stylesheet">
+  <style type="text/css">
+      html,body{
+        font-family: 'Poppins', sans-serif;
+        font-weight:normal;
+      }
+
+      .slick-slider{
+      margin-bottom: 0px;
+      width: 100% !important;
+    }
+  </style>
+  </head>
+
+<body>
+<section id="header-small">
+  <div class="container">
+    <div class="row">
+      <div class="col-md-12 col-lg-12">
+        <div class="content">
+          <marquee loop="infinite">
+                      <span style="text-transform:uppercase">Selamat Datang di Website Resmi Desa Kemiri, Kecamatan Jepon, Kabupaten Blora</span><span class="pl-3 pr-3 "><i class="fa fa-circle-thin" aria-hidden="true"></i></span>
+                    </marquee>
+
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<section id="header-big" class="shadow-sm d-none d-sm-none d-md-block d-lg-block d-xl-block">
+  <div class="container">
+    <div class="row">
+      <div class="col-md-4 col-lg-4">
+        <div class="identity">
+        <img src="https://kemiri-jepon.blorakab.go.id/logo/bl.png" alt="" style="height:80px">
+                <div class="name">
+          <h2><strong>Desa Kemiri</strong></h1>
+          <h6>Kabupaten Blora</h6>
+        </div>
+        
+        </div>
+      </div>
+      <div class="col-md-8 col-lg-8">
+        <div class="menu">
+          <a href="https://kemiri-jepon.blorakab.go.id/">BERANDA</a>
+          <div class="dropdown">
+            <button class="btn btn-link dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" style="text-decoration:none">
+              PROFIL DESA
+            </button>
+            <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+              <a class="dropdown-item" href="https://kemiri-jepon.blorakab.go.id/konten/sejarahdesa">SEJARAH DESA</a>
+              <a class="dropdown-item" href="https://kemiri-jepon.blorakab.go.id/konten/visimisi">VISI MISI</a>
+              <a class="dropdown-item" href="https://kemiri-jepon.blorakab.go.id/konten/sotk">STRUKTUR ORGANISASI</a>
+              <a class="dropdown-item" href="https://kemiri-jepon.blorakab.go.id/konten/wilayahdesa">WILAYAH DESA</a>
+              <a class="dropdown-item" href="https://kemiri-jepon.blorakab.go.id/konten/masyarakatdesa">MASYARAKAT DESA</a>
+              <a class="dropdown-item" href="https://kemiri-jepon.blorakab.go.id/potensidesa">POTENSI DESA</a>
+            </div>
+          </div>
+          <a href="https://kemiri-jepon.blorakab.go.id/Berita">BERITA</a>
+          <a href="https://kemiri-jepon.blorakab.go.id/peraturan">PERATURAN</a>
+          <a href="https://kemiri-jepon.blorakab.go.id/konten/agenda">AGENDA</a>
+
+          <div class="dropdown">
+            <button class="btn btn-link dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" style="text-decoration:none">
+              PPID
+            </button>
+            <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+              <a class="dropdown-item" href="https://kemiri-jepon.blorakab.go.id/ppid/setiapsaat">INFORMASI SETIAP SAAT</a>
+              <a class="dropdown-item" href="https://kemiri-jepon.blorakab.go.id/ppid/berkala">INFORMASI BERKALA</a>
+              <a class="dropdown-item" href="https://kemiri-jepon.blorakab.go.id/ppid/sertamerta">INFORMASI SERTA MERTA</a>
+              <a class="dropdown-item" href="https://kemiri-jepon.blorakab.go.id/ppid/dikecualikan">INFORMASI DIKECUALIKAN</a>
+            </div>
+          </div>
+
+          <a href="https://kemiri-jepon.blorakab.go.id/konten/kontak">KONTAK KAMI</a>
+
+        </div>
+
+      </div>
+    </div>
+  </div>
+</section>
+<nav class="navbar navbar-expand-md navbar-light bg-light d-sm-block d-md-none d-lg-none d-xl-none">
+    <a class="navbar-brand" href="#">
+            <div class="name">
+          <h5><strong>Desa Kemiri</strong></h5>
+        </div>
+            </a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse menu" id="navbarCollapse">
+      <ul class="navbar-nav mr-auto">
+        <li class="nav-item active">
+          <a class="nav-link" href="https://kemiri-jepon.blorakab.go.id/">BERANDA <span class="sr-only">(current)</span></a>
+        </li>
+        
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+            PROFIL DESA
+          </a>
+          <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+            <a class="dropdown-item" href="https://kemiri-jepon.blorakab.go.id/konten/sejarahdesa">SEJARAH DESA</a>
+            <a class="dropdown-item" href="https://kemiri-jepon.blorakab.go.id/konten/visimisi">VISI MISI</a>
+            <a class="dropdown-item" href="https://kemiri-jepon.blorakab.go.id/konten/sotk">STRUKTUR ORGANISASI</a>
+            <a class="dropdown-item" href="https://kemiri-jepon.blorakab.go.id/konten/wilayahdesa">WILAYAH DESA</a>
+            <a class="dropdown-item" href="https://kemiri-jepon.blorakab.go.id/konten/masyarakatdesa">MASYARAKAT DESA</a>
+            <a class="dropdown-item" href="https://kemiri-jepon.blorakab.go.id/potensidesa">POTENSI DESA</a>
+          </div>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="https://kemiri-jepon.blorakab.go.id/Berita">BERITA</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="https://kemiri-jepon.blorakab.go.id/konten/agenda">AGENDA</a>
+        </li>
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+            PPID
+          </a>
+          <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+            <a class="dropdown-item" href="https://kemiri-jepon.blorakab.go.id/ppid/setiapsaat">INFORMASI SETIAP SAAT</a>
+            <a class="dropdown-item" href="https://kemiri-jepon.blorakab.go.id/ppid/berkala">INFORMASI BERKALA</a>
+            <a class="dropdown-item" href="https://kemiri-jepon.blorakab.go.id/ppid/sertamerta">INFROMASI SERTA MERTA</a>
+            <a class="dropdown-item" href="https://kemiri-jepon.blorakab.go.id/ppid/dikecualikan">INFORMASI DIKECUALIKAN</a>
+          </div>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="https://kemiri-jepon.blorakab.go.id/konten/kontak">KONTAK KAMI</a>
+        </li>
+      </ul>
+    </div>
+  </nav><section class="section-one">
+  <div class="container-fluid">
+    <div class="row">
+      <div class="col-md-12 col-lg-12 pl-0 pr-0">
+        <div class="slideshow">
+                  <div><img src="https://kemiri-jepon.blorakab.go.id/uploads/4/2022-08/slider_picture_1.jpg" alt="" style="width:100%"/></div>
+              
+        <!-- <div><img src="/blogtheme3/images/slide5.png" alt=""  style="width:100%"/></div> -->
+        </div> 
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="section-three">
+  <div class="container">
+    <div class="row">
+      <div class="col-md-4 col-lg-4">
+        <div class="row">
+          <div class="col-md-12 col-lg-12"><h2 class="text-left"><strong><span class="title-one">Foto</span> <span class="title-two">Kegiatan</span></strong></h2></div>
+        </div>
+        <div class="row mt-3">
+          <div class="col-md-12 col-lg-12">
+          <div class="slideshow">
+                            <div>
+              <img src="https://kemiri-jepon.blorakab.go.id/uploads/4/2022-09/whatsapp_image_2022_09_20_at_094935_1.jpeg" alt="Pembagian BLT BBM Desa Kemiri yang dilaksanakan di Balai Desa Semampir Kecamatan Jepon Kabupaten Blora" style="width:100%;height:480px;border-radius:10px" class="shadow">
+              </div>
+                            <div>
+              <img src="https://kemiri-jepon.blorakab.go.id/uploads/4/2022-09/whatsapp_image_2022_09_20_at_094935_1.jpeg" alt="Pembagian BLT BBM Desa Kemiri yang dilaksanakan di Balai Desa Semampir Kecamatan Jepon Kabupaten Blora" style="width:100%;height:480px;border-radius:10px" class="shadow">
+              </div>
+                            <div>
+              <img src="https://kemiri-jepon.blorakab.go.id/uploads/4/2022-08/img_20220815_095301.jpg" alt="Musdes Penyusunan RKPDes Tahun Anggaran 2023 Desa Kemiri dilaksanakan pada tanggal 15 Agustus Tahun 2022. Musdes Penyusunan RKPDes dihadiri oleh BPD, LPMD, Ketua RT RW, PKK, dan Tokoh Masyarakat Desa Kemiri. Tujuan diadakanya Musdes RKPDes Yaitu untuk menampung usulan dari masyarakat desa kemiri untuk rencana kerja tahun berikutnya. Hasil Musdes yaitu Pembentukan Tim 7 penyusun RKPDes dan menerima semua usulan dari masyarakat desa kemiri. musdes selesai pada pukul 12.00 WIB." style="width:100%;height:480px;border-radius:10px" class="shadow">
+              </div>
+                            <div>
+              <img src="https://kemiri-jepon.blorakab.go.id/uploads/4/2022-08/klasifikasi_informasi_publik.png" alt="Klasifikasi Informasi Publik" style="width:100%;height:480px;border-radius:10px" class="shadow">
+              </div>
+                            <div>
+              <img src="https://kemiri-jepon.blorakab.go.id/uploads/4/2022-08/poster_flip_yaya.png" alt="Poster Flip" style="width:100%;height:480px;border-radius:10px" class="shadow">
+              </div>
+                            <div>
+              <img src="https://kemiri-jepon.blorakab.go.id/uploads/4/2022-08/aplikasi_poc_sesuai_prinsip_4t.png" alt="Aplikasi POC Sesuai Prinsip 4T" style="width:100%;height:480px;border-radius:10px" class="shadow">
+              </div>
+                            
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-md-8 col-lg-8">
+        <div class="row">
+          <div class="col-md-12 col-lg-12"><h2 class="text-left"><strong><span class="title-one">Berita</span> <span class="title-two">Terbaru</span></strong></h2></div>
+        </div>
+
+        <div class="row mt-3">
+          <div class="col-md-12 col-lg-12">
+            <div class="slideshow">
+                            
+              <div style="position:relative">
+              <a href='https://kemiri-jepon.blorakab.go.id/article/musdes-rkpdes-tahun-anggaran-2023'>
+                <img style="width: 100%;height:480px;border-radius:10px;" src="https://kemiri-jepon.blorakab.go.id/uploads/4/2023-03/whatsapp_image_2023_03_07_at_203847.jpeg" alt="" />
+
+                <div style="position:absolute;left:0;right:0;bottom:0;padding:20px 15px;background-color:rgba(0,0,0,0.6);border-bottom-left-radius:10px;border-bottom-right-radius:10px;">
+                  <h6 style="color:#fff"><strong>Musdes RKPDes tahun anggaran 2023</strong></h6>
+                  <p style="color:#fff;font-weight:400;font-size:12px" class="mt-2">Musyawarah Desa RKPDes Tahun anggaran 2023</p>
+                </div>
+                </a>
+              </div>
+              
+                            
+              <div style="position:relative">
+              <a href='https://kemiri-jepon.blorakab.go.id/article/kegiatan-vaksinasi-hewan-ternak-masyarakat-desa-kemiri'>
+                <img style="width: 100%;height:480px;border-radius:10px;" src="https://kemiri-jepon.blorakab.go.id/uploads/4/2023-03/whatsapp_image_2023_03_07_at_200558.jpeg" alt="" />
+
+                <div style="position:absolute;left:0;right:0;bottom:0;padding:20px 15px;background-color:rgba(0,0,0,0.6);border-bottom-left-radius:10px;border-bottom-right-radius:10px;">
+                  <h6 style="color:#fff"><strong>Kegiatan Vaksinasi Hewan Ternak Masyarakat Desa Kemiri</strong></h6>
+                  <p style="color:#fff;font-weight:400;font-size:12px" class="mt-2">Pada hari ini Rabu tanggal 8 maret 2023 telah dilaksanakan Vaksinasi hewan ternak milik warga desa kemiri bersama Dinas pangan Pertanian Peternakan dan Perikanan. tujuan dilaksanakan vaksinasi pada he...</p>
+                </div>
+                </a>
+              </div>
+              
+                            
+              <div style="position:relative">
+              <a href='https://kemiri-jepon.blorakab.go.id/article/mengenal-peta-bersama-sd-negeri-1-kemiri'>
+                <img style="width: 100%;height:480px;border-radius:10px;" src="https://kemiri-jepon.blorakab.go.id/uploads/4/2022-08/sekarr.png" alt="" />
+
+                <div style="position:absolute;left:0;right:0;bottom:0;padding:20px 15px;background-color:rgba(0,0,0,0.6);border-bottom-left-radius:10px;border-bottom-right-radius:10px;">
+                  <h6 style="color:#fff"><strong>Mengenal Peta bersama SD Negeri 1 Kemiri</strong></h6>
+                  <p style="color:#fff;font-weight:400;font-size:12px" class="mt-2">Jumat, 8 Juli 2022, dilaksanakan program kerja untuk mengenalkan pengetahuan dasar mengenai peta untuk siswa/siswi kelas 5 di SD Negeri Kemiri 1. Program ini dilaksanakan guna membekali siswa/siswi pe...</p>
+                </div>
+                </a>
+              </div>
+              
+                            
+              <div style="position:relative">
+              <a href='https://kemiri-jepon.blorakab.go.id/article/mengenal-mitigasi-bencana-gempa-bumi'>
+                <img style="width: 100%;height:480px;border-radius:10px;" src="https://kemiri-jepon.blorakab.go.id/uploads/4/2022-08/puspitt.png" alt="" />
+
+                <div style="position:absolute;left:0;right:0;bottom:0;padding:20px 15px;background-color:rgba(0,0,0,0.6);border-bottom-left-radius:10px;border-bottom-right-radius:10px;">
+                  <h6 style="color:#fff"><strong>Mengenal Mitigasi Bencana Gempa Bumi</strong></h6>
+                  <p style="color:#fff;font-weight:400;font-size:12px" class="mt-2">Indonesia merupakan negara yang berada pada jalur ring of fire sehingga mengakibatkan Indonesia menjadi wilayah yang berpotensi besar terhadap ancaman bencana. Bencana yang dimaksudkan adalah&nbsp; pe...</p>
+                </div>
+                </a>
+              </div>
+              
+                            
+              <div style="position:relative">
+              <a href='https://kemiri-jepon.blorakab.go.id/article/praktik-pembuatan-teh-herbal-rambut-jagung-bersama-ibu-ibu-pkk'>
+                <img style="width: 100%;height:480px;border-radius:10px;" src="https://kemiri-jepon.blorakab.go.id/uploads/4/2022-08/aditt.jpg" alt="" />
+
+                <div style="position:absolute;left:0;right:0;bottom:0;padding:20px 15px;background-color:rgba(0,0,0,0.6);border-bottom-left-radius:10px;border-bottom-right-radius:10px;">
+                  <h6 style="color:#fff"><strong>Praktik Pembuatan Teh Herbal Rambut Jagung bersama Ibu-ibu PKK</strong></h6>
+                  <p style="color:#fff;font-weight:400;font-size:12px" class="mt-2">Dalam 2 tahun belakangan, Indonesia dilanda pandemik COVID-19, yang mengakibatkan banyak sekali warga yang terkena positif COVID-19 ini. Selain itu, banyak wabah, virus, dan penyakit yang mulai ikut a...</p>
+                </div>
+                </a>
+              </div>
+              
+                            
+              <div style="position:relative">
+              <a href='https://kemiri-jepon.blorakab.go.id/article/fermentasi-pakan-ternak-janggel-jagung'>
+                <img style="width: 100%;height:480px;border-radius:10px;" src="https://kemiri-jepon.blorakab.go.id/uploads/4/2022-08/adit.jpg" alt="" />
+
+                <div style="position:absolute;left:0;right:0;bottom:0;padding:20px 15px;background-color:rgba(0,0,0,0.6);border-bottom-left-radius:10px;border-bottom-right-radius:10px;">
+                  <h6 style="color:#fff"><strong>Fermentasi Pakan Ternak Janggel Jagung</strong></h6>
+                  <p style="color:#fff;font-weight:400;font-size:12px" class="mt-2">Ternak ruminansia atau ternak yang memamah biak merupakan ternak yang biasa dibudidayakan oleh para petani, termasuk petani yang berada di Desa Kemiri, Kecamatan Jepon, Kabupaten Blora ini. Ternak rum...</p>
+                </div>
+                </a>
+              </div>
+              
+                            
+            </div>
+          </div>
+        </div>
+      </div>
+
+      
+    </div>
+  </div>
+</section>
+
+<section class="section-two">
+  <div class="container">
+          <div class="row">
+        <div class="col-md-7 col-lg-7">
+          <div class="row">
+            <div class="col-md-12 col-lg-12">
+              <h2><strong><span class="title-one">Sambutan</span> <span class="title-two">Kepala Desa Kemiri</span></strong></h2>
+            </div>
+          </div>
+
+          <div class="row mt-3">
+            <div class="col-md-12 col-lg-12">
+              <p>&quot;Selamat Datang di Website Resmi Desa Kemiri, Kecamatan Jepon Kabupaten Blora. Media komunikasi dan transparansi Pemerintah Desa Kemiri untuk seluruh masyarakat&quot;</p>
+            </div>
+          </div>
+          
+          
+        </div>
+
+        <div class="col-md-5 col-lg-5">
+          <center>
+            <img src="https://kemiri-jepon.blorakab.go.id/uploads/4/2022-08/zxzx.jpg" alt="" style="width:360px" class="img-fluid">
+            <h5 class="mt-3"><strong>Bp. Warsito</strong></h5>
+            <h6>Kepala Desa Kemiri</h6>
+          </center>
+        </div>
+      </div>
+      </div>
+</section>
+
+<section class="section-four">
+  <div class="container">
+    <div class="row">
+      <div class="col-md-12 col-lg-12">
+        <h2 class="text-center"><strong><span class="title-one">Lembaga</span> <span class="title-two">Desa</span></strong></h2>
+      </div>
+    </div>
+
+    <div class="row mt-2">
+          <div class="col-6 col-md-3 col-lg-3 mt-3 mb-3">
+        <div class="box-organisasi shadow">
+          <center>
+            <img src="https://kemiri-jepon.blorakab.go.id/uploads/4/2022-08/lembaga_logo_1_rwrt.png" alt="" style="width:70%">
+            <h5 class="mt-3"><strong>RW/RT</strong></h5>
+            <h6 style="font-size:12px">Rukun warga dan Rukun Tetangga</h6>
+
+            <a href="lembaga/rwrt" class="btn btn-primary btn-sm mt-3">Selengkapnya</a>
+          </center>
+        </div>
+      </div>
+          <div class="col-6 col-md-3 col-lg-3 mt-3 mb-3">
+        <div class="box-organisasi shadow">
+          <center>
+            <img src="https://kemiri-jepon.blorakab.go.id/uploads/4/2022-08/lembaga_logo_2_bumdes.png" alt="" style="width:70%">
+            <h5 class="mt-3"><strong>BUMDes</strong></h5>
+            <h6 style="font-size:12px">Badan Usaha Milik Desa</h6>
+
+            <a href="lembaga/bumdes" class="btn btn-primary btn-sm mt-3">Selengkapnya</a>
+          </center>
+        </div>
+      </div>
+          <div class="col-6 col-md-3 col-lg-3 mt-3 mb-3">
+        <div class="box-organisasi shadow">
+          <center>
+            <img src="https://kemiri-jepon.blorakab.go.id/uploads/4/2022-08/lembaga_logo_3_bpd.png" alt="" style="width:70%">
+            <h5 class="mt-3"><strong>BPD</strong></h5>
+            <h6 style="font-size:12px">Badan Permusyawaratan Desa</h6>
+
+            <a href="lembaga/bpd" class="btn btn-primary btn-sm mt-3">Selengkapnya</a>
+          </center>
+        </div>
+      </div>
+          <div class="col-6 col-md-3 col-lg-3 mt-3 mb-3">
+        <div class="box-organisasi shadow">
+          <center>
+            <img src="https://kemiri-jepon.blorakab.go.id/uploads/4/2022-08/lembaga_logo_4_pkk.png" alt="" style="width:70%">
+            <h5 class="mt-3"><strong>PKK</strong></h5>
+            <h6 style="font-size:12px">Pemberdayaan Kesejahteraan Keluarga</h6>
+
+            <a href="lembaga/pkk" class="btn btn-primary btn-sm mt-3">Selengkapnya</a>
+          </center>
+        </div>
+      </div>
+          <div class="col-6 col-md-3 col-lg-3 mt-3 mb-3">
+        <div class="box-organisasi shadow">
+          <center>
+            <img src="https://kemiri-jepon.blorakab.go.id/uploads/4/2022-08/lembaga_logo_5_pik_r.png" alt="" style="width:70%">
+            <h5 class="mt-3"><strong>PIK-R</strong></h5>
+            <h6 style="font-size:12px">PIK Remaja</h6>
+
+            <a href="lembaga/pik-r" class="btn btn-primary btn-sm mt-3">Selengkapnya</a>
+          </center>
+        </div>
+      </div>
+          <div class="col-6 col-md-3 col-lg-3 mt-3 mb-3">
+        <div class="box-organisasi shadow">
+          <center>
+            <img src="https://kemiri-jepon.blorakab.go.id/uploads/4/2022-08/lembaga_logo_6_karang_taruna.png" alt="" style="width:70%">
+            <h5 class="mt-3"><strong>Karang Taruna</strong></h5>
+            <h6 style="font-size:12px">Karang Taruna</h6>
+
+            <a href="lembaga/karang-taruna" class="btn btn-primary btn-sm mt-3">Selengkapnya</a>
+          </center>
+        </div>
+      </div>
+          <div class="col-6 col-md-3 col-lg-3 mt-3 mb-3">
+        <div class="box-organisasi shadow">
+          <center>
+            <img src="https://kemiri-jepon.blorakab.go.id/uploads/4/2022-08/lembaga_logo_7_kelompok_tani.png" alt="" style="width:70%">
+            <h5 class="mt-3"><strong>Kelompok Tani</strong></h5>
+            <h6 style="font-size:12px">Gabungan Kelompok Tani</h6>
+
+            <a href="lembaga/kelompok-tani" class="btn btn-primary btn-sm mt-3">Selengkapnya</a>
+          </center>
+        </div>
+      </div>
+          <div class="col-6 col-md-3 col-lg-3 mt-3 mb-3">
+        <div class="box-organisasi shadow">
+          <center>
+            <img src="https://kemiri-jepon.blorakab.go.id/uploads/4/2022-08/lembaga_logo_8_lpmd.png" alt="" style="width:70%">
+            <h5 class="mt-3"><strong>LPMD</strong></h5>
+            <h6 style="font-size:12px">Lembaga Pemberdayaan Masyarakat Desa</h6>
+
+            <a href="lembaga/lpmd" class="btn btn-primary btn-sm mt-3">Selengkapnya</a>
+          </center>
+        </div>
+      </div>
+        </div>
+  </div>
+</section>
+
+<section class="section-five">
+  <div class="container">
+    <div class="row">
+      <div class="col-md-6 col-lg-6">
+        <div class="row">
+          <div class="col-md-12 col-lg-12">
+          <h2 class="text-center"><strong><span class="title-one">Potensi</span> <span class="title-two">Desa</span></strong></h2>
+          </div>
+        </div>
+
+        <div class="row mt-3">
+          <div class="col-md-12 col-lg-12">
+          <div class="slideshow">
+                            <div style="position:relative">
+              <a href='https://kemiri-jepon.blorakab.go.id/article/kegiatan-vaksinasi-hewan-ternak-masyarakat-desa-kemiri'>
+                <img style="width: 100%;height:360px;border-radius:10px;" src="https://kemiri-jepon.blorakab.go.id/uploads/4/2023-03/whatsapp_image_2023_03_07_at_200558.jpeg" alt="" />
+
+                <div style="position:absolute;left:0;right:0;bottom:0;padding:20px 15px;background-color:rgba(0,0,0,0.6);border-bottom-left-radius:10px;border-bottom-right-radius:10px;">
+                  <h6 style="color:#fff"><strong>Kegiatan Vaksinasi Hewan Ternak Masyarakat Desa Kemiri</strong></h6>
+                  <p style="color:#fff;font-weight:400;font-size:12px" class="mt-2">Pada hari ini Rabu tanggal 8 maret 2023 telah dilaksanakan Vaksinasi hewan ternak milik warga desa kemiri bersama Dinas pangan Pertanian Peternakan dan Perikanan. tujuan dilaksanakan vaksinasi pada he...</p>
+                </div>
+              </a>
+              </div>
+                            <div style="position:relative">
+              <a href='https://kemiri-jepon.blorakab.go.id/article/identifikasi-fasilitas-keuangan-dan-umkm-di-desa-kemiri'>
+                <img style="width: 100%;height:360px;border-radius:10px;" src="https://kemiri-jepon.blorakab.go.id/uploads/4/2022-08/0001.jpg" alt="" />
+
+                <div style="position:absolute;left:0;right:0;bottom:0;padding:20px 15px;background-color:rgba(0,0,0,0.6);border-bottom-left-radius:10px;border-bottom-right-radius:10px;">
+                  <h6 style="color:#fff"><strong>Identifikasi Fasilitas Keuangan dan UMKM di Desa Kemiri</strong></h6>
+                  <p style="color:#fff;font-weight:400;font-size:12px" class="mt-2">Pada awal bulan Agustus, tim KKN-PPM UGM Unit 2022-JT009 Jepon melakukan identifikasi fasilitas keuangan dan UMKM di Desa Kemiri, Kec. Jepon. Program kerja ini merupakan program kerja interdisipliner...</p>
+                </div>
+              </a>
+              </div>
+                            <div style="position:relative">
+              <a href='https://kemiri-jepon.blorakab.go.id/article/pelatihan-pembuatan-bricket-dari-bonggol-jagung-bersama-kelompok-tani'>
+                <img style="width: 100%;height:360px;border-radius:10px;" src="https://kemiri-jepon.blorakab.go.id/uploads/4/2022-08/01r.jpg" alt="" />
+
+                <div style="position:absolute;left:0;right:0;bottom:0;padding:20px 15px;background-color:rgba(0,0,0,0.6);border-bottom-left-radius:10px;border-bottom-right-radius:10px;">
+                  <h6 style="color:#fff"><strong>Pelatihan Pembuatan Bricket dari Bonggol Jagung Bersama Kelompok Tani</strong></h6>
+                  <p style="color:#fff;font-weight:400;font-size:12px" class="mt-2">Proses anak- anak dalam&nbsp; memahami suatu mata pelajaran tentunya tidak bisa langsung paham begitu saja terkait materi yang dijelaskan. Anak- anak pastinya perlu waktu lebih dalam mencerna materi y...</p>
+                </div>
+              </a>
+              </div>
+                            <div style="position:relative">
+              <a href='https://kemiri-jepon.blorakab.go.id/article/praktek-pembuatan-pupuk-organik-cair-di-desa-kemiri'>
+                <img style="width: 100%;height:360px;border-radius:10px;" src="https://kemiri-jepon.blorakab.go.id/uploads/4/2022-08/11rrrr.jpg" alt="" />
+
+                <div style="position:absolute;left:0;right:0;bottom:0;padding:20px 15px;background-color:rgba(0,0,0,0.6);border-bottom-left-radius:10px;border-bottom-right-radius:10px;">
+                  <h6 style="color:#fff"><strong>Praktek Pembuatan Pupuk Organik Cair di Desa Kemiri</strong></h6>
+                  <p style="color:#fff;font-weight:400;font-size:12px" class="mt-2">Limbah rumah tangga seperti sayuran dan buah-buahan sering tidak termanfaatkan dan malah menjadi pencemar lingkungan. Padahal limbah tersebut berpotensi diolah menjadi produk yang lebih baik lagi yakn...</p>
+                </div>
+              </a>
+              </div>
+                            <div style="position:relative">
+              <a href='https://kemiri-jepon.blorakab.go.id/article/4t-tepat-jenis-tepat-dosis-tepat-cara-dan-tepat-waktu-pemupukan'>
+                <img style="width: 100%;height:360px;border-radius:10px;" src="https://kemiri-jepon.blorakab.go.id/uploads/4/2022-08/t123.jpg" alt="" />
+
+                <div style="position:absolute;left:0;right:0;bottom:0;padding:20px 15px;background-color:rgba(0,0,0,0.6);border-bottom-left-radius:10px;border-bottom-right-radius:10px;">
+                  <h6 style="color:#fff"><strong>4T (Tepat Jenis, Tepat Dosis, Tepat Cara, dan Tepat Waktu Pemupukan)</strong></h6>
+                  <p style="color:#fff;font-weight:400;font-size:12px" class="mt-2">(02/08/22) - Edukasi mengenai pembuatan dan pengaplikasian pupuk organik cair (POC) menjadi bahasan hangat di Balai Desa Kemiri bersama perwakilan kelompok tani hari Selasa malam itu. Pupuk organik ca...</p>
+                </div>
+              </a>
+              </div>
+                            <div style="position:relative">
+              <a href='https://kemiri-jepon.blorakab.go.id/article/desa-apps-x-hama-wereng-dalam-kegiatan-penyuluhan-kelompok-tani'>
+                <img style="width: 100%;height:360px;border-radius:10px;" src="https://kemiri-jepon.blorakab.go.id/uploads/4/2022-08/t3333.jpg" alt="" />
+
+                <div style="position:absolute;left:0;right:0;bottom:0;padding:20px 15px;background-color:rgba(0,0,0,0.6);border-bottom-left-radius:10px;border-bottom-right-radius:10px;">
+                  <h6 style="color:#fff"><strong>“Desa Apps x Hama Wereng” dalam Kegiatan Penyuluhan Kelompok Tani</strong></h6>
+                  <p style="color:#fff;font-weight:400;font-size:12px" class="mt-2">(31/07/22) - Minggu malam pukul 19.45 WIB di Balai Desa Kemiri, Kecamatan Jepon, Kabupaten Blora sedang berkumpul perwakilan kelompok tani dan ketua RW setempat bersama tim KKN UGM 2022. Malam itu, se...</p>
+                </div>
+              </a>
+              </div>
+                            
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-6 col-lg-6">
+        <div class="row">
+          <div class="col-md-12 col-lg-12">
+          <h2 class="text-center"><strong><span class="title-one">Video</span> <span class="title-two">Kegiatan</span></strong></h2>
+          </div>
+        </div>
+
+        <div class="row mt-3">
+          <div class="col-md-12 col-lg-12">
+            <div class="slideshow">
+                            <div>
+              <video width="100%" height="360" controls style='background-color:#000;border-radius:10px'>
+                <source src="https://kemiri-jepon.blorakab.go.id/uploads/4/2021-02/whatsapp_video_2021_02_04_at_111807.mp4" type="video/mp4">
+                <source src="https://kemiri-jepon.blorakab.go.id/uploads/4/2021-02/whatsapp_video_2021_02_04_at_111807.mp4" type="video/ogg">
+                Your browser does not support the video tag.
+              </video>
+              </div>
+                            
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="section-six">
+  <div class="container">
+    <div class="row">
+      <div class="col-md-12 col-lg-12">
+        <h2 class="text-center"><strong><span class="title-one">Link</span> <span class="title-two">Terkait</span></strong></h2>
+      </div>
+    </div>
+
+    <div class="row mt-3">
+      <div class="col-md-12 col-lg-12">
+        <div class="link-terkait">
+          
+                          
+                
+                <div>
+                <a href="http://blorakec.blorakab.go.id/" target="blank">
+                    <img src="https://kemiri-jepon.blorakab.go.id/uploads/1/2023-01/ss.php" alt="">
+</a>
+                </div>
+                
+              
+                            
+                
+                <div>
+                <a href="http://jeponkec.blorakab.go.id" target="blank">
+                    <img src="https://kemiri-jepon.blorakab.go.id/uploads/4/2021-03/camat_jepon.jpg" alt="">
+</a>
+                </div>
+                
+              
+                            
+                
+                <div>
+                <a href="http://bogorejokec.blorakab.go.id" target="blank">
+                    <img src="https://kemiri-jepon.blorakab.go.id/uploads/4/2021-03/camat_bogorejo.jpg" alt="">
+</a>
+                </div>
+                
+              
+                            
+                
+                <div>
+                <a href="http://jikenkec.blorakab.go.id/" target="blank">
+                    <img src="https://kemiri-jepon.blorakab.go.id/uploads/4/2021-03/camat_jiken.jpg" alt="">
+</a>
+                </div>
+                
+              
+                            
+                
+                <div>
+                <a href="http://sambongkec.blorakab.go.id" target="blank">
+                    <img src="https://kemiri-jepon.blorakab.go.id/uploads/4/2021-03/camat_sambong.jpg" alt="">
+</a>
+                </div>
+                
+              
+                            
+                
+                <div>
+                <a href="http://tunjungankec.blorakab.go.id" target="blank">
+                    <img src="https://kemiri-jepon.blorakab.go.id/uploads/4/2021-03/camat_cepu.jpg" alt="">
+</a>
+                </div>
+                
+              
+                            
+                
+                <div>
+                <a href="http://kedungtubankec.blorakab.go.id/" target="blank">
+                    <img src="https://kemiri-jepon.blorakab.go.id/uploads/4/2021-03/camat_kedungtuban.jpg" alt="">
+</a>
+                </div>
+                
+              
+                            
+                
+                <div>
+                <a href="http://kradenankec.blorakab.go.id/" target="blank">
+                    <img src="https://kemiri-jepon.blorakab.go.id/uploads/4/2021-03/camat_kradenan.jpg" alt="">
+</a>
+                </div>
+                
+              
+                            
+                
+                <div>
+                <a href="http://randublatungkec.blorakab.go.id/" target="blank">
+                    <img src="https://kemiri-jepon.blorakab.go.id/uploads/4/2021-03/camat_randublatung.jpg" alt="">
+</a>
+                </div>
+                
+              
+                            
+                
+                <div>
+                <a href="http://jatikec.blorakab.go.id/" target="blank">
+                    <img src="https://kemiri-jepon.blorakab.go.id/uploads/4/2021-03/camat_jati.jpg" alt="">
+</a>
+                </div>
+                
+              
+                            
+                
+                <div>
+                <a href="http://banjarejokec.blorakab.go.id" target="blank">
+                    <img src="https://kemiri-jepon.blorakab.go.id/uploads/4/2021-03/camat_banjarejo.jpg" alt="">
+</a>
+                </div>
+                
+              
+                            
+                
+                <div>
+                <a href="http://tunjungankec.blorakab.go.id" target="blank">
+                    <img src="https://kemiri-jepon.blorakab.go.id/uploads/4/2021-03/camat_tunjungan.jpg" alt="">
+</a>
+                </div>
+                
+              
+                            
+                
+                <div>
+                <a href="http://ngawenkec.blorakab.go.id/" target="blank">
+                    <img src="https://kemiri-jepon.blorakab.go.id/uploads/4/2021-02/camat_ngawen.jpg" alt="">
+</a>
+                </div>
+                
+              
+                            
+                
+                <div>
+                <a href="http://todanankec.blorakab.go.id/" target="blank">
+                    <img src="https://kemiri-jepon.blorakab.go.id/uploads/4/2021-02/camat_todanan.jpg" alt="">
+</a>
+                </div>
+                
+              
+                            
+                
+                <div>
+                <a href="http://kundurankec.blorakab.go.id/" target="blank">
+                    <img src="https://kemiri-jepon.blorakab.go.id/uploads/4/2021-02/camat_kunduran.jpg" alt="">
+</a>
+                </div>
+                
+              
+                            
+                
+                <div>
+                <a href="http://japahkec.blorakab.go.id/" target="blank">
+                    <img src="https://kemiri-jepon.blorakab.go.id/uploads/4/2021-02/camat_japah.jpg" alt="">
+</a>
+                </div>
+                
+              
+                        </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<footer id="footer-big">
+  <div class="container">
+    <div class="row">
+      <div class="col-md-4 col-lg-4">
+        <h4 class="title-one"><strong><span >Lokasi</span> <span>Kami</span></strong></h4>
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d253384.7274462586!2d111.22812491229074!3d-7.11019126119656!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e775b67ffc83e65%3A0x3027a76e352bb00!2sKabupaten%20Blora%2C%20Jawa%20Tengah!5e0!3m2!1sid!2sid!4v1569212821532!5m2!1sid!2sid" width="100%" height="250" frameborder="0" style="border:0;" allowfullscreen="" class="mt-3"></iframe>
+      </div>
+
+      <div class="col-md-8 col-lg-8">
+        <div class="row">
+          <div class="col-md-1 col-lg-1"></div>
+          <div class="col-md-6 col-lg-6">
+            <h4 class="mb-3 title-one"><strong><span>Seputar</span> <span>Kami</span></strong></h4>
+            <a href="https://kemiri-jepon.blorakab.go.id/konten/sejarahdesa" style="text-decoration:none;color:#212529" ><h6>Sejarah Desa</h6></a>
+            <a href="https://kemiri-jepon.blorakab.go.id/konten/visimisi" style="text-decoration:none;color:#212529" ><h6 class="mt-2">Visi Misi</h6></a>
+            <a href="https://kemiri-jepon.blorakab.go.id/konten/sotk" style="text-decoration:none;color:#212529"><h6 class="mt-2">Struktur Organisasi</h6></a>
+            <a href="https://kemiri-jepon.blorakab.go.id/konten/wilayahdesa" style="text-decoration:none;color:#212529"><h6 class="mt-2">Wilayah Desa</h6></a>
+            <a href="https://kemiri-jepon.blorakab.go.id/konten/masyarakatdesa" style="text-decoration:none;color:#212529"><h6 class="mt-2">Masyarakat Desa</h6></a>
+            <a href="https://kemiri-jepon.blorakab.go.id/potensidesa" style="text-decoration:none;color:#212529"><h6 class="mt-2">Potensi Desa</h6></a>
+          </div>
+          <div class="col-md-5 col-lg-5">
+            <h4 class="title-one"><strong><span >Kontak</span> <span>Kami</span></strong></h4>
+                          <h4 class="mt-3">Desa Kemiri</h4>
+              <h6 class="mt-2">
+                <strong>Kecamatan Jepon, Kabupaten Blora, Provinsi Jawa Tengah, Indonesia</strong>
+              </h6>
+              <h6 class="mt-2">
+              <i class="fa fa-phone" aria-hidden="true"></i> 081225414111 <br>
+              <i class="fa fa-envelope-o" aria-hidden="true"></i> desakemirijepon@gmail.com
+              </h6>
+            
+            <h5 class="mt-5 mb-3 title-one"><strong><span>Jumlah</span> <span>Pengunjung</span></strong></h5>
+            <script type="text/javascript">
+                var visitors = localStorage.getItem('visitors') || 100;
+                localStorage.setItem('visitors', parseInt(visitors)+1);
+                document.write(+ visitors+ " Pengunjung");
+              </script>
+              <div class="page-count">
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</footer>
+
+<footer id="footer-small">
+  <div class="container">
+    <div class="row">
+      <div class="col-md-12 col-lg-12">
+        <div class="content">
+          <h6 class="text-center" style="color:#fff">Copyright &copy;2021 All rights reserved | Dinas Komunikasi dan Informatika Kabupaten Blora</h6>
+        </div>
+      </div>
+    </div>
+  </div>
+</footer>
+    
+  <!-- javascript
+    ================================================== -->
+  <!-- Placed at the end of the document so the pages load faster -->
+  <script src="https://kemiri-jepon.blorakab.go.id/blogtheme3/js/jquery-1.11.1.min.js"></script>
+  <script src="https://kemiri-jepon.blorakab.go.id/blogtheme3/js/bootstrap.bundle.js"></script>
+  <script src="https://kemiri-jepon.blorakab.go.id/blogtheme3/plugins/bxslider/jquery.bxslider.min.js"></script>
+  <script src="https://kemiri-jepon.blorakab.go.id/blogtheme3/plugins/slick/slick.js"></script>
+  <script src="https://kemiri-jepon.blorakab.go.id/blogtheme3/plugins/slider_revo/jquery.themepunch.plugins.min.js" type="text/javascript" ></script>
+  <script src="https://kemiri-jepon.blorakab.go.id/blogtheme3/plugins/slider_revo/jquery.themepunch.revolution.min.js" type="text/javascript"></script>
+  
+  <script type="text/javascript">
+  // $('.slideshow').bxSlider({    
+  //     pager:false,      
+  //     controls :false,     
+  //     auto:true  
+  //   });
+
+  $('.slideshow').slick({
+      dots: false,
+      infinite: true,
+      vertical: false,
+      slidesToScroll: 1,
+      autoplay: true,
+      autoplaySpeed: 2500,
+      arrows : false,
+  });
+
+  $('.link-terkait').bxSlider({   
+      maxSlides: 4,   
+      moveSlides:1,   
+      pager:false,   
+      slideWidth: 240,   
+      controls :true,   
+      slideMargin:30, 
+    });
+
+    $('.slideshow-news').bxSlider({
+      pagerCustom: '.carousel',
+      controls:false,
+      adaptiveHeight: true,
+      auto:true,
+    });
+
+    $('.carousel').bxSlider({
+      controls:true,
+      slideWidth: 200,
+      minSlides: 1,
+      maxSlides: 4,
+      pager :false,
+      // controls:true,
+
+    });
+
+    revapi = jQuery('.tp-banner').revolution(
+                {
+                    delay:8000,
+                    startwidth:1170,
+                    startheight:555,
+                    hideThumbs:10,
+                    fullWidth:"on",
+                    fullScreen:"off",
+                    videoJsPath:"/plugins/slider_revo/videojs/",
+                    fullScreenOffsetContainer: ""
+                });
+   
+  </script>
+  <!-- Template Custom JavaScript File -->
+  </body>
+</html>
